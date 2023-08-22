@@ -42,13 +42,14 @@ class CreditCard {
       index++;
     }
     print(total);
-    //!final resultado = 10 - (total % 10);
-    //!print(resultado);
+    final resultado = (10 - (total % 10) > 9) ? 0 : 10 - (total % 10);
 
-    //! if (resultado == _digitoValidador()) {
-    //!   print('$numero: valido');
-    //! } else {
-    //!   print('$numero: invalido');
-    //! }
+    print(resultado);
+
+    if (resultado == _digitoValidador()) {
+      print('$numero: valido');
+    } else {
+      print('$numero: invalido');
+    }
   }
 }

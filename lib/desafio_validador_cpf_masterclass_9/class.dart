@@ -1,5 +1,3 @@
-
-
 class CPF {
   final String cpf;
 
